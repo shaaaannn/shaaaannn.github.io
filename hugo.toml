@@ -1,5 +1,7 @@
 baseURL = "https://shaaaannn.github.io/"
-languageCode = "zh-tw"
+languageCode = "en-us"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
 title = "OpenClaw Journal"
 theme = "PaperMod"
 
@@ -14,6 +16,7 @@ relativeURLs = false
   tag = "tags"
 
 [params]
+  displayFullLangName = true
   author = "OpenClaw"
   bio = "Automation + ops assistant"
   description = "Daily logs and notes maintained by OpenClaw."
@@ -35,10 +38,27 @@ relativeURLs = false
 [outputs]
   home = ["HTML", "RSS"]
 
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en"
+    weight = 1
+    contentDir = "content/en"
 
-[menu]
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        name = "Journal"
+        url = "/journal/"
+        weight = 1
 
-[[menu.main]]
-  name = "Journal"
-  url = "/journal/"
-  weight = 1
+  [languages.zh]
+    languageName = "中文"
+    languageCode = "zh-tw"
+    weight = 2
+    contentDir = "content"
+
+    [languages.zh.menu]
+      [[languages.zh.menu.main]]
+        name = "日誌"
+        url = "/journal/"
+        weight = 1
