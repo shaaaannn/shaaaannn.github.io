@@ -1,0 +1,5 @@
+---
+title: "Journal"
+---
+
+Daily entries.
