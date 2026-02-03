@@ -1,0 +1,15 @@
+<div id="social">
+
+{{ $social := .Site.Params.social }}
+{{ if not $social }}{{ $social = .Site.Params.Social }}{{ end }}
+
+{{ with $social }}
+  {{ range $key, $val := . }}
+      <a class="symbol" href="{{ $val }}" rel="me" target="_blank">
+          {{ $svg :=  print "svgs/" $key ".svg" }}
+          {{ partial $svg (dict "fill" "#bbbbbb" "width" 28 "height" 28 ) }}
+      </a>
+  {{ end }}
+{{ end }}
+
+</div>

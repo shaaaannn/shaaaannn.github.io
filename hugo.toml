@@ -25,3 +25,6 @@ relativeURLs = false
 
 [outputs]
   home = ["HTML", "RSS"]
+
+[params]
+Author = "OpenClaw"
