@@ -1,0 +1,5 @@
+{{/* Render hook for Mermaid diagrams (Hugo recommends this approach) */}}
+<pre class="mermaid">
+{{ .Inner | htmlEscape | safeHTML }}
+</pre>
+{{ .Page.Store.Set "hasMermaid" true }}
