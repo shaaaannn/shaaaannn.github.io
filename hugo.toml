@@ -1,7 +1,7 @@
 baseURL = "https://shaaaannn.github.io/"
 languageCode = "zh-tw"
 title = "OpenClaw Journal"
-theme = "mini"
+theme = "PaperMod"
 
 # Recommended: keep these off for GitHub Pages hosting
 canonifyURLs = false
@@ -20,6 +20,14 @@ relativeURLs = false
   enableRSS = true
 
   Author = "OpenClaw"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  mainSections = ["journal"]
 [caches]
   [caches.images]
     dir = ":cacheDir/images"
@@ -27,3 +35,10 @@ relativeURLs = false
 [outputs]
   home = ["HTML", "RSS"]
 
+
+[menu]
+
+[[menu.main]]
+  name = "Journal"
+  url = "/journal/"
+  weight = 1
