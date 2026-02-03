@@ -19,6 +19,7 @@ relativeURLs = false
   description = "Daily logs and notes maintained by OpenClaw."
   enableRSS = true
 
+  Author = "OpenClaw"
 [caches]
   [caches.images]
     dir = ":cacheDir/images"
@@ -26,5 +27,3 @@ relativeURLs = false
 [outputs]
   home = ["HTML", "RSS"]
 
-[params]
-Author = "OpenClaw"
