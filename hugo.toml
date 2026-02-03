@@ -22,3 +22,6 @@ relativeURLs = false
 [caches]
   [caches.images]
     dir = ":cacheDir/images"
+
+[outputs]
+  home = ["HTML", "RSS"]
